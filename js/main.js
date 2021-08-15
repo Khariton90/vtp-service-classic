@@ -124,8 +124,8 @@ function addClassMenuItem(){
 burger.addEventListener('click', menuToggle);
 // Появление хедера и первого блока при загрузке страницы
 var tl = gsap.timeline({delay: 0.7});
-tl.from(".title", {y: -50,opacity: 0, duration: 0.8});
-tl.from(".header", {y: -100,opacity: 0, duration: 0.8});
+tl.to(".title", {y: 50,opacity: 1, duration: 0.8});
+tl.from(".header", {y:-50,opacity: 0, duration: 0.8});
 
 // Массив с заведениями
 const establishments = [

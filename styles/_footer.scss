@@ -33,7 +33,6 @@
     button{
         background: $f-gr;
         color: $f-white;
-        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08), inset -2px -2px 4px #699B00, inset 4px 4px 9px #ADFF00;
         width: 100%;
         position: relative;
         background-color: #80BD00;
@@ -47,6 +46,7 @@
         color: #FFFFFF;
         overflow: hidden;
         border: none;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08), inset -2px -2px 4px #699B00, inset 4px 4px 9px #ADFF00!important;
         animation: blik 3s linear infinite alternate-reverse;
     }
 }
