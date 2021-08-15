@@ -1,0 +1,44 @@
+.company{
+    padding: 48px 0 64px 0;
+    background: #E1DBDB;
+    position: relative;
+}
+
+#company p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222222;
+}
+.company__describ__normal{
+    font-weight: 300!important;
+}
+.mg-decrib{
+    margin: 20px 0 30px 0!important;
+}
+.mg-decrib_last{
+    margin: 20px 0 0 0!important;
+}
+.decrib-first{
+    position: relative;
+}
+.decrib-first:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    width: 42px;
+    height: 1px;
+    background: #80bd00;
+}
+.company__bg{
+    display: none;
+}
+.company__description{
+    position: relative;
+    z-index: 2;
+}
+.company-img{
+    display: none;
+}

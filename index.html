@@ -1,0 +1,1133 @@
+</html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/style.min.css">
+    <title>ВТП-Сервис</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="container-fluid header__wrapper">
+            <div class="row header-top">
+                <div class="col">
+                    <div class="logo">
+                      <div class="logo__icon">
+                        <img src="./img/icons/logo.svg" alt="logo">
+                      </div>
+                      
+                      <div class="logo__dp">
+                        <span>ВТП-Сервис</span>
+                        <span>Ремонт и обслуживание. Эффективно и быстро</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 navigation">
+                    <nav class="nav">
+                        <ul id="menu">
+                            <li><a class="nav__link" href="#service">Услуги</a></li>
+                            <li><a class="nav__link" href="#company">О нас</a></li>
+                            <li><a class="nav__link" href="#price">Прайс</a></li>
+                            <li><a class="nav__link" href="#works">Галерея</a></li>
+                            <li><a class="nav__link" href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col tels">
+                  <div class="telephone">
+                    <a href="tel:89052529999"><img src="./img/icons/tel_icon.svg" alt="telephone">
+                    <span>8 (905) 252-99-99</span>
+                    </a>
+                    <div class="burger">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <section class="section service" id="service">
+            <div class="container">
+              <div class="row title">
+                <div class="col-12 col-xl-8">
+                  <h1>Обслуживание и ремонт<br> коммерческих площадей</h1>
+                  <div class="subtitle">
+                    <p>Мы имеем достаточно большой опыт в ремонте </p>
+                    <p>и обслуживании коммерческих площадей,</p>
+                    <p>офисов, кафе, ресторанов, салонов красоты и складов.</p>
+                    <p>Доверяйте профессионалам.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-4 form">
+                  <form submit="#">
+                    <div class="form__title">
+                        <p>Оставте заявку</p>
+                        <p>и наш специалист вам перезонит</p>
+                    </div>
+                    <div class="form__body">
+                        <div class="form__input">
+                            <label for="name">Как к вам обращаться?</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form__input">
+                            <label for="tel">Ваш номер телефона</label>
+                            <input type="text" id="tel">
+                        </div>
+                        <div class="form__input form__input_select">
+                            <label for="company">Выберите отдел</label>
+                            <p>
+                                <select name="company" id="company-select">
+                                    <option selected value=""></option>
+                                    <option value="">Значение 1</option>
+                                    <option value="">Значение 2</option>
+                                    <option value="">Значение 3</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="form__input">
+                            <label for="message">Краткое описание работ</label>
+                            <textarea type="text" id="message"> </textarea>
+                        </div>
+                        <div class="form__input">
+                            <button class="btn" id="btn-form">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <div class="col-12 cards">
+                  <div class="card">
+                    <div class="card__img">
+                        <img src="./img/icons/1.svg" alt="1">
+                    </div>
+                    <div class="card__descripion">
+                        <p>Первичный выезд нашего</p>
+                        <p>специалиста бесплатно</p>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./img/icons/2.svg" alt="2">
+                    </div>
+                    <div class="card__descripion">
+                        <p>Качественный ремонт</p>
+                        <p>в кратчайшие сроки</p>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./img/icons/3.svg" alt="3">
+                    </div>
+                    <div class="card__descripion">
+                        <p>Наличный и безналичный</p>
+                        <p>расчет по договору</p>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./img/icons/4.svg" alt="4">
+                    </div>
+                    <div class="card__descripion">
+                        <p>Комплексный подход к</p>
+                        <p>ремонту и обслуживанию</p>                        
+                    </div>
+                </div>
+                </div>
+              </div>
+        </section>
+        <section class="section about" id="about">
+            <div class="about__bg">
+                <img data-aos="fade-up" src="./img/serviceback.png" alt="background">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col about__title">
+                        <h2>Для вас мы можем</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mobile__none"></div>
+                    <div class="col">
+                        <h3>Всё что вам нужно есть у нас</h3>   
+                    </div>
+                    
+                </div>
+             <div class="row">
+                <div class="about__icons">
+                    <div class="col-md-3 mobile__none">
+
+                    </div>
+                <div class="col-md-5 col-12">
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item1.svg" alt="item1">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Ремонт помещений</p>
+                            <p>косметический экспресс ремонт</p>
+                            <p>ваших помещений</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item2.svg" alt="item2">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Электромонтажные работы</p>
+                            <p>монтаж и подключение</p>
+                            <p>электрощитов под ключ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item3.svg" alt="item3">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Сантехнические работы</p>
+                            <p>выполнение полного цикла</p>
+                            <p>операций</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item4.svg" alt="item4">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Обслуживание систем</p>
+                            <p>кондиционирования, отопления</p>
+                            <p>и пожаротушения</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-3 mobile__none"></div>
+                <div class="col">
+                    <h3>Мы выполняем все, даже не большие заявки</h3>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="about__icons">
+                        <div class="col-md-3 mobile__none"></div>
+                <div class="col-md-5 col-12">
+                    
+                        <div data-aos="zoom-out" class="about__icon icon master">
+                            <img src="./img/icons/item9.svg" alt="item9">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Мастер на час</p>
+                            <p>Повесить полку, починить</p>
+                            <p>мебель и тд.</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item5.svg" alt="item5">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Замена ламп, <br> электрических розеток</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item6.svg" alt="item6">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Ремонт окон</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img src="./img/icons/item7.svg" alt="item7">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Замена дверных ручек <br>и замков</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out" class="about__icon icon">
+                            <img  src="./img/icons/item8.svg" alt="item8">
+                            <div class="icon__descrip">
+                            <p class="icon__title">Замена смесителей</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-out" class="about__icon icon master-mobile">
+                          <img src="./img/icons/item9.svg" alt="item9">
+                          <div class="icon__descrip">
+                          <p class="icon__title">Мастер на час</p>
+                          <p>Повесить полку, починить</p>
+                          <p>мебель и тд.</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+             </div>
+            
+            </div>
+        </section>
+        <section class="section company" id="company">
+          <img  data-aos="fade-up" class="company-img" src="./img/parBg.png" alt="">
+            <div class="container">
+                    <h2>О нашей компании</h2>
+                <div class="row company__description">
+                    <p class="decrib-first">Вы владеете объектом коммерческой недвижимости, будь то офис, </p>
+                    <p>Бизнес – центр, торговые площади или ресторан, тогда у Вас возникает</p>
+                    <p>вопрос – как тратить меньше на обслуживание помещений, здания </p>
+                    <p>и инженерных систем, включая текущие и непредвиденные ремонты?</p>
+                    <p class="company__describ__normal mg-decrib">Мы это делаем 15 лет с минимальными затратами ресурсов и времени.</p>
+                    <p class="decrib-first">Вы сдаете помещения в аренду или арендуете крупные офисные площади,</p>
+                    <p>сервис – вот что удерживает арендаторов и создает комфортные условия</p>
+                    <p>для работы сотрудников.</p>
+                    <p class="company__describ__normal mg-decrib">У нас есть опыт в организации быстрого и эффективного сервиса.</p>
+                    <p class="decrib-first">Вы ведете свой бизнес и знаете, как заработать, а мы умеем</p>
+                    <p>оптимизировать расходы на эксплуатацию и обслуживание без потери</p>
+                    <p>надежности систем.</p>
+                    <p class="company__describ__normal mg-decrib mg-decrib_last">Безопасность и надежность партнеров – это часть бизнеса. Мы возьмем на</p>
+                    <p class="company__describ__normal">себя обязательства и выполним в точности все условия Договора.</p>
+                </div>
+            </div>
+            <div class="company__bg">
+                <img class="image-company" src="./img/about2.png" alt="cafe">
+            </div>
+            <div class="company__bg">
+                <img class="frame" src="./img/aboutframe.png" alt="frame">
+            </div>
+        </section>
+        <section class="section price" id="price">
+            <div class="container">
+                  <h2>Стоимость работ</h2>
+                  <div class="accordion " id="accordionExample">
+            <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Плотницкие работы
+              </button>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-lg-8 p-0">
+                     <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                  </div>
+        
+                  <div class="col accordeon-img">
+                    <img src="./img/price-image.png" alt="price-image">
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Электротехнические работы
+              </button>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 col-lg-8 p-0">
+          <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                </div>
+                <div class="col accordeon-img">
+                  <img src="./img/price-image.png" alt="price-image">
+                </div>
+              </div>
+        
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Сантехнические работы
+              </button>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-lg-8 p-0">
+                     <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                  </div>
+                  <div class="col accordeon-img">
+                    <img src="./img/price-image.png" alt="price-image">
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Работы по ремонту окон
+              </button>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-lg-8 p-0">
+                     <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                  </div>
+                  <div class="col accordeon-img">
+                    <img src="./img/price-image.png" alt="price-image">
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+            <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Ремонтно-отделочные работы
+              </button>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-lg-8">
+                     <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                  </div>
+                  <div class="col accordeon-img">
+                    <img src="./img/price-image.png" alt="price-image">
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+            <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Обслуживание кондиционеров
+              </button>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-lg-8 p-0">
+                     <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                  </div>
+                  <div class="col accordeon-img">
+                    <img src="./img/price-image.png" alt="price-image">
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+            <div class="accordion-item">
+              <button data-aos="fade-right" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Расценки на особые условия
+              </button>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-lg-8 p-0">
+                     <table class="table table-bordered priceToggle">
+          <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Демонтаж эл. точки<br> (розетка, выключатель,<br> монтажная коробка)</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж открытой проводки</td>
+              <td>м.п.</td>
+              <td>22,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж проводки,<br> размещенной в коробах</td>
+              <td>м.п.</td>
+              <td>27,50 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж светильников</td>
+              <td>шт.</td>
+              <td>77,00 ₽</td>
+            </tr>
+            <tr>
+              <td>Демонтаж двухполюсного<br> автомата</td>
+              <td>шт.</td>
+              <td>385,00 ₽</td>
+            </tr>
+                <tr>
+              <td colspan="3" class="table-bold">Устройство гнезда для подразетника (стандартного размера)</td>
+            </tr>
+          </tbody>
+            <thead>
+            <tr class="table-active">
+              <th>Услуга</th>
+              <th>ед.изм</th>
+              <th>Цена, ₽</th>
+            </tr>
+            <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в кирпичной стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсолите</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+            <tr>
+              <td>в гипсокартоне</td>
+              <td>шт.</td>
+              <td>220,00 ₽</td>
+            </tr>
+                <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+                <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+                <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+                <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+                <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+                <tr>
+              <td>в ж/б стене</td>
+              <td>шт.</td>
+              <td>275,00 ₽</td>
+            </tr>
+          </thead>
+        </table>
+                  </div>
+                  <div class="col accordeon-img">
+                    <img src="./img/price-image.png" alt="price-image">
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+        </div>
+                </div>
+        </section>
+        <section class="section organized" id="organized">
+            <img data-aos="fade-up" class="organized-bg" src="./img/par2bg.png" alt="background">
+            <div class="container">
+                    <h2>Как все устроено?</h2>
+                                <div class="organized-subtitle">
+                        <p class="text-descript">Процесс начинается с выезда нашего<br> специалиста на объект и первичного осмотра.</p>
+                    </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <span class="text-title organized__title">Ремонт</span>
+                        <ul class="list">
+                            <li>Cоставление сметы</li>
+                            <li>Cогласование</li>
+                            <li>Оплата / предоплата</li>
+                            <li>Ремонт</li>
+                            <li>Закрытые объекта</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <span class="text-title organized__title">Сервисное обслуживание</span>
+                        <ul class="list">
+                            <li>Осмотр помещения</li>
+                            <li>Составление акта осмотра</li>
+                            <li>Согласование проводимых работ</li>
+                            <li>Ремонт</li>
+                            <li>Бесплатная ежемесячная проверка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section talk" id="talk">
+          <img class="quotation-left" src="./img/talk1.png" alt="quotation-left">
+          <img class="quotation-right" src="./img/talk2.png" alt="quotation-right">
+          <div class="container">
+            <h2>Про нас говорят люди</h2>
+<div class="swiper-wpar">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item">
+            <p>Алексей</p>
+            <p>Нужен был ремонт в ресторане, обратились в эту компанию.</p>
+            <p>Мастера начали свое дело буквально через несколько дней. </p>
+            <p>Ребята были очень спокойными, хорошими.</p>
+            <p>Сделали очень качественный и красивый ремонт...  <a href="#">читать отзыв</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="mySwiper-pagination">
+  <div class="buttons">
+    <div class="swiper-button-prevy"></div>
+    <div class="line"></div>
+    <div class="swiper-button-nexty"></div>
+  </div>
+</div>
+          </div>
+        </section>
+        <section class="works" id="works">
+          <div class="container">
+            <h2>Наши работы</h2>
+            <div class="row slider">
+              <div class="col-12 col-xl-6 slider__dp">
+                <h3 id="workTitle">Уютное заведение №1</h3>
+                <ul id="sliderDp">
+                  <li class="dpItem">Капитальный ремонт ресторана по адресу: <br> г. Санкт-Петербург, <br> Петровский бульвар д. 2 корп.1</li>
+                  <li class="dpItem">Площадь ресторана: 160м2</li>
+                  <li class="dpItem">Срок выполнения работ: 25 дней</li>
+                </ul>
+              </div>
+              <div class="col-12 col-xl-6 slider__box">
+                <div class="newSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide main-slide">
+                      <img src="./img/1.png" />
+                    </div>
+                    <div class="swiper-slide main-slide">
+                      <img src="./img/1.png" />
+                    </div>
+                    <div class="swiper-slide main-slide">
+                      <img src="./img/1.png" />
+                    </div>
+                    <div class="swiper-slide main-slide">
+                     <img src="./img/1.png" />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="mySwiper-pagination">
+                <div class="buttons" id="buttons">
+                  <div class="swiper-button-works-prev"></div>
+                  <div class="line"></div>
+                  <div class="swiper-button-works-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-footer">
+              <form submit="#">
+                <div class="form-footer__title">
+                  <p>Остались вопросы?</p>
+                  <p>оставьте заявку и мы вам перезвоним</p>
+                </div>
+                <div class="form-footer__body questions">
+                  <div class="questions__input">
+                    <input type="text" id="footerName" placeholder="Как к вам обращаться?">
+                  </div>
+                  <div class="questions__input">
+                    <input type="text" id="footerTelephone" placeholder="Ваш номер телефона">
+                  </div>
+                  <button class="btn-footer">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer__contacts">
+              <p>Контакты</p>
+              <a href="tel:89052529999"><img src="./img/icons/tel_contacts.svg" alt="telephone"> <span>8(905)252-99-99</span></a>
+              <a href="mailto:vtpsinfo@mail.ru"><img src="./img/icons/mail_contacts.svg" alt="mail"> <span>vtpsinfo@mail.ru</span></a>
+              <a href="#"><img src="./img/icons/time_contacts.svg" alt="time"> <span>с 8.00 до 23.00</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="./js/main.js"></script>  
+    </body>
+</html>

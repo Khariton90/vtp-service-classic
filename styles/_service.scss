@@ -1,0 +1,184 @@
+.service{
+    width: 100%;
+    height: auto;
+    background: url('../img/background.png') center center no-repeat;
+    background-size: cover;
+    padding: 129px 0 230px 0;
+     .service__wrapper{
+         display: grid;
+         max-width: 1670px;
+         margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding:0 15px;
+     }
+}
+.title{
+    color: $f-white;
+    h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(32px + 16 * ((100vw - 375px) / (1920 - 375)));
+        line-height: calc(28px + 28 * ((100vw - 375px) / (1920 - 375)));
+        text-align: left;
+    }
+    .subtitle{
+        margin-top:18px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: calc(18px + 6 * ((100vw - 375px) / (1920 - 375)));
+        line-height: calc(20px + 8 * ((100vw - 375px) / (1920 - 375)));
+        text-align: left;
+    }
+}
+.title, form{
+    margin-bottom: 42px;
+}
+.form{
+    display: flex;
+    justify-content: left;
+    margin-top: 42px;
+    form{
+        width: 330px;
+        max-height: 485px;
+        background: #F9F9F9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .form__title{
+        width: inherit;
+        height: 70px;
+        border-radius: 5px;
+        color: $f-white;
+        background-color: #80BD00;
+        padding: 14px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08), inset -2px -2px 4px #699B00, inset 4px 4px 9px #ADFF00;
+            p:first-child{
+                font-weight: bold;
+            }
+    }
+    .form__body{
+        margin: 22px 30px;
+         .form__input{
+             margin-top:14px;
+         }
+         label{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;           
+            color: #222222;
+            margin-bottom: 2px;
+         }
+         input,select,textarea{
+             width: 270px;
+             height: 32px;
+             background: $f-white;
+             border: 1px solid #D9D9D9;
+             border-radius: 1px;
+         }
+         textarea{
+            height: 68px;
+            resize: none;
+         }
+         .btn{
+            width: 270px;
+            height: 48px;
+            font-weight: bold;
+            color: $f-white;
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08), inset -2px -2px 4px #699B00, inset 4px 4px 9px #ADFF00;
+            position: relative;
+            background-color: #80BD00;
+            background-image: linear-gradient(45deg, rgba(255,255,255,.0) 40%, rgba(255,255,255,.5), rgba(255,255,255,.0) 60%);
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto;
+            background-position: 200% 0, 0 0;
+            box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+            padding: 6px 42px 7px;
+            border-radius: 2px;
+            color: #FFFFFF;
+            overflow: hidden;
+            border: none;
+            animation: blik 3s linear infinite alternate-reverse;
+         }
+    }
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 184px;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+.card{
+    min-width: 330px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background: $f-white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 24px;
+    .card__img{
+        width: 68px;
+        height: 68px;
+        background: #80BD00;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08), inset -2px -2px 4px #699B00, inset 4px 4px 9px #ADFF00;
+        display: flex;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .card__descripion{
+        margin-left: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #222222;
+    }
+}
+
+
+.form__input select{
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    padding-left: 5px;
+    position: relative;
+    width: 100%;
+    display: block;
+    background: transparent;
+}
+.form__input_select{
+    position: relative;
+    background: transparent;
+}
+
+.form__input_select:after,.form__input select:before{
+    content: url('../img/icons/select.svg');
+    position: absolute;
+    width: 34px;
+    height: 32px;
+    z-index: 1;
+    right: 0px;
+    bottom: 0px;
+}
+.form__input_select:before{
+    content: '.';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    background: #ffffff;
+    z-index: 0;
+    text-align: right;
+}
+#company-select{
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}

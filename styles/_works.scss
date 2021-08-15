@@ -1,0 +1,54 @@
+.works{
+    background: #E1DBDB;
+    padding:42px 0;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    justify-content: flex-start;
+}
+.slider__box{
+    max-width: 400px!important;
+    pointer-events: none!important;
+}
+.works.newSwiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+  .works.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+  .works.swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-button-works-prev,.swiper-button-works-next{
+    width: 20px;
+    height: 20px;
+  }
+  .swiper-button-works-prev{
+    background: url('../img/icons/arrow.svg');
+  }
+  .swiper-button-works-next{
+    background: url('../img/icons/arrownext.svg');
+  }
+  .workTitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  #sliderDp li{
+    list-style-type: disc;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 32px;
+  }
