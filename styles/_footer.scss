@@ -1,6 +1,7 @@
 .footer{
     background: rgba(56, 61, 66, 0.8);
     padding: 24px 0 34px;
+    position: relative;
 }
 .form-footer{
     min-width: 300px;
@@ -89,4 +90,22 @@
     span{
         margin-left: 12px;
     }
+}
+
+.landing-done{
+    width: 100%;
+    height: 40px;
+    background: #2D2014;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+.landing-done__row{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+}
+.landing-done__row p{
+    margin-right: 16px!important;
 }
