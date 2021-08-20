@@ -52,3 +52,10 @@
     line-height: 21px;
     margin-top: 32px;
   }
+  .slider__dp{
+    pointer-events: none!important;
+    transform: translateX(15px);
+  }
+  .dp-slide{
+    background:#e1dbdb;
+  }

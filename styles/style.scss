@@ -190,6 +190,14 @@ h3{
 .slider{
   justify-content: space-between;
 }
+.slider__dp{
+  transform: translateX(-60px);
+}
+}
+@media(min-width:1400px){
+  .slider__dp{
+    transform: translateX(-120px);
+  }
 }
 @media (min-width: 1440px){
   .about__bg{
@@ -242,6 +250,9 @@ h3{
 .works{
   background: #E1DBDB;
   padding:50px 0;
+}
+.company__suff{
+  display: block;
 }
 }
 

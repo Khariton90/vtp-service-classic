@@ -1,7 +1,7 @@
 
 window.addEventListener('load', function(){
   // Свайпер два слайдера
-  let swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     slidesPerGroup: 2,
@@ -25,7 +25,8 @@ window.addEventListener('load', function(){
       prevEl: ".swiper-button-prevy",
     },
   })
-var swiper2 = new Swiper(".newSwiper", {
+
+const swiper2 = new Swiper(".newSwiper", {
     effect: "coverflow",
     centeredSlides: true,
     slidesPerView: 1,
@@ -47,7 +48,13 @@ var swiper2 = new Swiper(".newSwiper", {
       prevEl: ".swiper-button-works-prev",
     },
   });
-
+  const swiper3 = new Swiper(".slider__dp", {
+    spaceBetween: 100,
+    navigation: {
+      nextEl: ".swiper-button-works-next",
+      prevEl: ".swiper-button-works-prev",
+    }
+  });
 // Аос инициализация
 AOS.init({
       once: true,
@@ -126,74 +133,6 @@ burger.addEventListener('click', menuToggle);
 var tl = gsap.timeline({delay: 0.7});
 tl.to(".title", {y: 50,opacity: 1, duration: 0.8});
 tl.from(".header", {y:-50,opacity: 0, duration: 0.8});
-
-// Массив с заведениями
-const establishments = [
-  {
-    id:1,
-    title: 'Уютное заведение #1',
-    item1: `Капитальный ремонт ресторана по адресу: <br> г. Санкт-Петербург, <br> Петровский бульвар д. 2 корп.1`,
-    item2: 'Площадь ресторана: 160м2',
-    item3: 'Срок выполнения работ: 25 дней'
-  },
-  {
-    id:2,
-    title: 'Уютное заведение #2',
-    item1: `Капитальный ремонт ресторана по адресу: <br> г. Санкт-Петербург, <br> Петровский бульвар д. 2 корп.2`,
-    item2: 'Площадь ресторана: 160м2',
-    item3: 'Срок выполнения работ: 25 дней'
-  },
-  {
-    id:3,
-    title: 'Уютное заведение #3',
-    item1: `Капитальный ремонт ресторана по адресу: <br> г. Санкт-Петербург, <br> Петровский бульвар д. 2 корп.3`,
-    item2: 'Площадь ресторана: 160м2',
-    item3: 'Срок выполнения работ: 25 дней'
-  },
-  {
-    id:4,
-    title: 'Уютное заведение #4',
-    item1: `Капитальный ремонт ресторана по адресу: <br> г. Санкт-Петербург, <br> Петровский бульвар д. 2 корп.4`,
-    item2: 'Площадь ресторана: 160м2',
-    item3: 'Срок выполнения работ: 25 дней'
-  },
-]
-let workTitle = document.getElementById('workTitle');
-let items = document.querySelectorAll('.dpItem');
-let itemsArray = Array.from(items);
-let topItem = document.getElementById('sliderDp');
-
-// Смена описаний из массива с заведениями 
-async function descriptionWorks(){
-  let block = await establishments[counter];
-  workTitle.innerHTML = await block.title;
-  await tl.from(workTitle, {x: -50,opacity: 0, duration: 0.3});
-  itemsArray[0].innerHTML = await block.item1;
-  itemsArray[1].innerHTML = await block.item2;
-  itemsArray[2].innerHTML = await block.item3;
-  await tl.from(topItem, {x: -30,opacity: 0, delay: 0.2, duration: 0.3});
-
-}
-
-let btnNext = document.querySelector('.swiper-button-works-next');
-let btnPrev = document.querySelector('.swiper-button-works-prev');
-let buttons = document.getElementById('buttons');
-let counter = 0;
-buttons.addEventListener('click', increment)
-
-async function increment(e){
-  await setTimeout(() => {
-    if(e.target == btnNext && counter <= 2){
-      counter++;
-      descriptionWorks()
-    }else if(e.target == btnPrev && counter > 0){
-      counter--;
-      descriptionWorks()
-    }
-  },200)
-
-
-}
 
 })
 
